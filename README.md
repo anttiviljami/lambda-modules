@@ -43,7 +43,7 @@ To use the module: (needs IAM permission to call lambda function)
 import * as helloService from '@org/hello-service'
 
 // configure lambda module
-helloservice.__init({
+helloService.__init({
   FunctionName: 'arn:aws:lambda:eu-central-1:123456789012:function:hello-service-handler',
 })
 
