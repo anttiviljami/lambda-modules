@@ -1,6 +1,6 @@
 {
   "name": "lambda-modules",
-  "version": "1.0.0",
+  "version": "0.0.1-rfc",
   "description": "Expose Node.js modules as Lambda functions",
   "main": "index.js",
   "scripts": {
