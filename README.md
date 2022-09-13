@@ -2,6 +2,13 @@
 
 Expose Node.js modules as Lambda functions
 
+## Idea
+
+Packages Node.js CommonJS or ESM modules into fully typed packages with module
+exports converted into callable Lambda function invokes.
+
+![Diagram](./lambda-modules.drawio.png)
+
 ## Installation
 
 ```
@@ -44,7 +51,7 @@ import * as helloService from '@org/hello-service'
 
 // configure lambda module
 helloService.__init({
-  FunctionName: 'arn:aws:lambda:eu-central-1:123456789012:function:hello-service-handler',
+  FunctionName: 'arn:aws:lambda:eu-central-1:123456789012:function:hello-service-module-handler',
 })
 
 async function main() {
