@@ -87,7 +87,7 @@ const ModuleProxy = new Proxy(lambdaModule, {
   get(target, prop, receiver) {
     if (prop === '__init') return target[prop]
 
-    return (...args) => Lambda.invoke({
+    return (...args) => target.lambda.invoke({
       FunctionName: target.FunctionName,
       Payload: {
         prop,
